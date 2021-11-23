@@ -1,4 +1,5 @@
 from unittest import TestCase
+from heapsort import *
 
 
 class Test(TestCase):
@@ -18,10 +19,31 @@ class Test(TestCase):
 		                57, 839, 917, 626, 904, 186, 861, 134, 202, 713, 114, 419, 716, 810, 155, 707, 302, 339, 123, 305, 786, 269, 337, 575, 349, 714, 126, 147, 26, 82, 766, 617, 452, 375, 763, 414, 647, 410, 872, 810, 471, 894, 3, 287, 335, 815, 605, 609, 930, 595, 204, 966, 989, 791, 532, 505, 587, 917, 70, 438, 46, 129, 899, 615, 328, 102, 469, 178, 659, 412, 252, 427, 261, 137, 309, 527, 247, 194, 437, 64, 163, 120, 944, 737, 184, 658, 77, 669, 672, 474, 791, 920, 662, 813, 838, 787, 873,
 		                696, 149, 388, 968, 519, 82, 847, 163, 553, 397, 120, 723, 901, 740, 120, 551, 913, 47, 358, 846, 948, 464, 746, 781, 621, 349, 544, 241, 349, 425, 719, 920, 122, 411, 115, 514, 867, 308, 921, 311, 723, 38, 879, 201, 795, 356, 581, 38, 699, 744, 955, 309, 313, 535, 767, 286, 656, 652, 532, 166, 775, 153, 774, 252, 819, 237, 922, 862, 238, 521, 529, 498, 191, 107, 647, 796, 785, 482, 366, 884, 742, 298, 558, 105, 441, 892, 786, 490, 60, 776, 211, 980, 725, 384, 74, 154,
 		                136, 110, 993, 154, 155, 999, 878, 538, 218, 520, 746, 77, 240, 516, 110, 847, 899, 758, 858, 541, 773, 561, 798, 621, 870, 526, 78, 781, 463, 827, 735, 213]
-		self.output_0 = 10
-		self.output_1 = self.input_1.sort()
-		self.output_2 = self.input_2.sort()
-		self.output_3 = self.output_3.sort()
+		self.output_0 = sorted(self.input_0)
+		self.output_1 = sorted(self.input_1)
+		self.output_2 = sorted(self.input_2)
+		self.output_3 = sorted(self.input_3)
 	
 	def test_heapsort_0(self):
-		self.fail()
+		print(f'input = {self.input_0}')
+		print(f'expected output = {self.output_0}')
+		
+		self.assertEqual(heapsort(self.input_0), self.output_0)
+	
+	def test_heapsort_1(self):
+		print(f'input = {self.input_1}')
+		print(f'expected output = {self.output_1}')
+		
+		self.assertEqual(heapsort(self.input_1), self.output_1)
+	
+	def test_heapsort_2(self):
+		print(f'input = {self.input_2}')
+		print(f'expected output = {self.output_2}')
+		
+		self.assertEqual(heapsort(self.input_2), self.output_2)
+	
+	def test_heapsort_3(self):
+		print(f'input = {self.input_3}')
+		print(f'expected output = {self.output_3}')
+		
+		self.assertEqual(heapsort(self.input_3), self.output_3)
