@@ -25,25 +25,41 @@ class Test(TestCase):
 		self.output_3 = sorted(self.input_3)
 	
 	def test_heapsort_0(self):
+		print()
+		ans = heapsort(self.input_0)
+		
 		print(f'input = {self.input_0}')
+		print(f'actual output = {ans}')
 		print(f'expected output = {self.output_0}')
 		
-		self.assertEqual(heapsort(self.input_0), self.output_0)
+		self.assertEqual(ans, self.output_0)
 	
 	def test_heapsort_1(self):
+		print()
+		ans = heapsort(self.input_1)
+		
 		print(f'input = {self.input_1}')
+		print(f'actual output = {ans}')
 		print(f'expected output = {self.output_1}')
 		
-		self.assertEqual(heapsort(self.input_1), self.output_1)
+		self.assertEqual(ans, self.output_1)
 	
 	def test_heapsort_2(self):
+		print()
+		ans = heapsort(self.input_2)
+		
 		print(f'input = {self.input_2}')
+		print(f'actual output = {ans}')
 		print(f'expected output = {self.output_2}')
 		
-		self.assertEqual(heapsort(self.input_2), self.output_2)
+		self.assertEqual(ans, self.output_2)
 	
 	def test_heapsort_3(self):
+		print()
+		ans = heapsort(self.input_3)
+		
 		print(f'input = {self.input_3}')
+		print(f'actual output = {ans}')
 		print(f'expected output = {self.output_3}')
 		
-		self.assertEqual(heapsort(self.input_3), self.output_3)
+		self.assertEqual(ans, self.output_3)

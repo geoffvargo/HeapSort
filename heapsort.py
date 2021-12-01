@@ -4,6 +4,8 @@ import random
 import re
 import sys
 
+from heapq import *
+
 
 #
 # Complete the 'heapsort' function below.
@@ -13,4 +15,8 @@ import sys
 #
 
 def heapsort(arr):
-	pass
+	h = []
+	for elem in arr:
+		heappush(h, elem)
+	
+	return [heappop(h) for i in range(h.__len__())]
